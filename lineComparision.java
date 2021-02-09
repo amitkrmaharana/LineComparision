@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.lang.Math;
+import java.util.Collections;
 public class lineComparision {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line Comparision Computation Program");
@@ -15,11 +16,14 @@ public class lineComparision {
                 double line2_y2 = scan.nextDouble();
                 double length_line1 = Math.sqrt(Math.pow((line1_x2-line1_x1),2) + Math.pow((line1_y2-line1_y1),2));
 		double length_line2 = Math.sqrt(Math.pow((line2_x2-line2_x1),2) + Math.pow((line2_y2-line2_y1),2));
-		if (length_line1 == length_line2)
-			System.out.println("Both lines have equal lengths");
-		else if (length_line1 > length_line2)
-			System.out.println("Length of line1 with length "+length_line1+" is GREATER than Length of line2 with length "+length_line2);
+		Double line1 = Double.valueOf(length_line1);
+		Double line2 = Double.valueOf(length_line2);
+		double compare = line1.compareTo(line2);
+		if (compare > 0)
+			System.out.println("Length of line 1 is greater than Length of line 2");
+		else if (compare < 0)
+			System.out.println("Length of line 1 is lesser than Length of line 2");
 		else
-			System.out.println("Length of line1 with length "+length_line1+" is LESSER than Length of line2 with length "+length_line2);
+			System.out.println("Both lines are equal");
 	}
 }
