@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 import java.util.Collections;
-public class lineComparision {
+public class LineComparision {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line Comparision Computation Program");
 		Scanner scan = new Scanner(System.in);
