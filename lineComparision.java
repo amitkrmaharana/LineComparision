@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.lang.Math;
 import java.util.Collections;
 public class LineComparision {
-	void comparing(double len_line1, double len_line2) {
+	public void comparing(double len_line1, double len_line2) {
                 Double line1 = Double.valueOf(len_line1);
                 Double line2 = Double.valueOf(len_line2);
                 double compare = line1.compareTo(line2);
